@@ -12,13 +12,12 @@ function Keg(props) {
           <Col className="pt-2 pb-2 position-relative">
             <h4 className="fw-normal border-bottom pb-1">{props.name}<span className="fw-light">|</span> <span className="fs-6">({props.pints} Pints Available)</span></h4>
             Brand: {props.brand}<br />
-            Bean Type: {props.beanType} <br />
+            {/* Bean Type: {props.beanType} <br />
             Pint Price: $ {props.price} <br />
-            {props.description}
+            {props.description} */}
 
             <div className="mt-3 me-3 text-end position-absolute bottom-0 end-0">
-              <Button variant="dark" size="sm" className="me-3 px-4 rounded-pill shadow-sm">Add to Cart</Button>
-              <Button variant="dark" size="sm" className="px-4 rounded-pill shadow-sm">Edit</Button>
+              <Button variant="dark" size="sm" className="me-3 px-4 rounded-pill shadow-sm">Buy a Pint</Button>
             </div>
           </Col>
         </Row>

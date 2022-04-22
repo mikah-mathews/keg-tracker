@@ -33,7 +33,7 @@ class KegParentContainer extends React.Component {
                 description={keg.description}
                 price={keg.price}
                 beanType={keg.beanType}
-                pints={keg.pints}
+                pints={keg.pints} 
                 key={keg.id}
                 />
               )}
