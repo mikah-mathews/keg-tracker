@@ -19,7 +19,7 @@ _An application to practice and demonstrate the fundamentals of React_
 1. Clone project from Github and navigate to project file in terminal
 2. Run "npm start"
 
-![A wireframe diagram](https://imgur.com/a/8pV1CbC)
+<img src="keg.drawio.png">
   
 ## Known Bugs
 
