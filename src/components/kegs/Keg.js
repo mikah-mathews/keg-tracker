@@ -11,8 +11,9 @@ function Keg(props) {
         <Row>
           <Col className="pt-2 pb-2 position-relative">
             <h4 className="fw-normal border-bottom pb-1">{props.name}<span className="fw-light">|</span> <span className="fs-6">({props.pints} Pints Available)</span></h4>
-            Brand: {props.brand}
-            Bean Type: {props.beanType}
+            Brand: {props.brand}<br />
+            Bean Type: {props.beanType} <br />
+            Pint Price: $ {props.price} <br />
             {props.description}
 
             <div className="mt-3 me-3 text-end position-absolute bottom-0 end-0">
