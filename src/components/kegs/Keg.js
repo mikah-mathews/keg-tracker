@@ -5,6 +5,7 @@ import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
 
 function Keg(props) {
+
   return (
     <React.Fragment>
       <ListGroup.Item className="mb-3 border shadow-sm">
