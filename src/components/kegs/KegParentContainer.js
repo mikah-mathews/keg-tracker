@@ -11,7 +11,8 @@ class KegParentContainer extends React.Component {
     super(props);
     this.state = {
       mainKegList: [],
-      selectedKeg: null
+      selectedKeg: null,
+      
     };
   }
 
