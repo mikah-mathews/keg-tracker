@@ -20,7 +20,6 @@ function KegDetail(props) {
             {keg.description}<br /><br /><br />
 
             <div className="mt-3 me-3 text-end position-absolute bottom-0 end-0">
-              <Button variant="dark" size="sm" className="me-3 px-4 rounded-pill shadow-sm">Buy a Pint</Button>
               <Button variant="dark" size="sm" className="me-3 px-4 rounded-pill shadow-sm" onClick={() => onClickingDelete(keg.id)}>Delete Keg</Button>
             </div>
           </Col>
@@ -32,7 +31,8 @@ function KegDetail(props) {
 
 KegDetail.propTypes = {
   keg: PropTypes.object,
-  onClickingDelete: PropTypes.func
+  onClickingDelete: PropTypes.func,
+  onClickingBuyPint: PropTypes.func
 }
 
 export default KegDetail;

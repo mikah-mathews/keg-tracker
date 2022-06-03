@@ -6,7 +6,6 @@ import Button from 'react-bootstrap/Button';
 import PropTypes from 'prop-types';
 
 function Keg(props) {
-
   return (
     <React.Fragment>
       <div onClick = {() => props.whenKegClicked(props.id)}>
@@ -16,8 +15,10 @@ function Keg(props) {
               <h4 className="fw-normal border-bottom pb-1">{props.name}<span className="fw-light"> | </span> <span className="fs-6">({props.pints} Pints Available)</span></h4>
               <br />
               <div className="mt-3 me-3 text-end position-absolute bottom-0 end-0">
-                <Button variant="dark" size="sm" className="me-3 px-4 rounded-pill shadow-sm">Buy a Pint</Button>
-              </div>
+              <Button variant="dark" size="sm" className="me-3 px-4 rounded-pill shadow-sm" 
+              onClick={ () => props.onClickingBuyPint(props.id)}>Buy a Pint</Button>
+              
+            </div>
             </Col>
           </Row>
         </ListGroup.Item>
@@ -34,6 +35,7 @@ Keg.propTypes = {
   price: PropTypes.string,
   description: PropTypes.string,
   id: PropTypes.string,
-  whenKegClicked: PropTypes.func
+  whenKegClicked: PropTypes.func,
+  onClickingBuyPint: PropTypes.func
 }
 export default Keg;
